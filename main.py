@@ -15,7 +15,7 @@ def write_range(filename, a, b):
             file.write(f"{number}\n")
 
 def count_files(directory):
-    return len([name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name))])
+    return len(os.listdir(directory))
 
 def open_in_notepad(filename):
     os.system(f'notepad {filename}')
